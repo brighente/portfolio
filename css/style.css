@@ -89,10 +89,20 @@
     width: 100%;
     height: 100%;
     background-color: #1b0f1f60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .square-border{
     border: 2px solid var(--cor04);
     height: 500px;
+    width: 70%;
+    z-index: 0;
+}
+
+.square-img{
+    width: 100%;
+    height: 100%;
 }
