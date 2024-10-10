@@ -71,8 +71,8 @@
     border: 2px solid var(--cor01);
     background-color: var(--cor04);
     color: var(--cor00);
-    width: 30%;
-    height: 50px;
+    width: 35%;
+    height: 60px;
     margin-top: 40px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -149,6 +149,18 @@
         width: 40%;
     }
 
+    .intro-contact p{
+        font-size: 0.9rem;
+    }
+
+    #contact-2{
+        padding: 0px;
+    }
+
+    #contact-3{
+        padding: 0 15px;
+    }
+
     .intro-img{
         padding: 40px 40px 40px 20px;
     }
@@ -164,6 +176,18 @@
         width: 40%;
     }
 
+    .intro-contact-content{
+        width: 98%;
+    }
+
+    #contact-1{
+        padding: 0 5px;
+    }
+
+    #contact-3{
+        padding: 0 10px;
+    }
+
     .square-border{
         width: 550px;
     }
@@ -171,14 +195,15 @@
 
 @media (max-width: 1024px){
     .intro-container{
-        height: 45vh;
-        justify-content: center;
+        height: 75vh;
+        display: flex;
+        align-items: center;
     }
     
     .intro-content{
-        width: 60%;
-        row-gap: 50px;
-        /* padding: 30px 0px 0px 0px; */
+        width: 70%;
+        row-gap: 150px;
+        padding: 0px;
         position: absolute;
         justify-content: flex-start;
         left: 50%;
@@ -189,24 +214,50 @@
         align-items: center;
     }
 
+    .intro-text h1{
+        font-size: 4.5rem;
+    }
+
     .intro-text button{
-        height: 40px;
+        height: 60px;
+        width: 50%;
+        font-size: 1.4rem;
     }
 
-    .intro-contact{
-        align-items: center;
-        padding: 5px;
-    }
-
-    .intro-img{
-        padding: 0px;
-        justify-content: center;
-        align-items: flex-end;
+    .intro-contact-container{
+        height: 80px;
     }
 
     .intro-contact-content{
         padding: 0px;
+        height: 70px;
         border: none;
+    }
+
+    #contact-1{
+        padding: 0 10px;
+    }
+
+    #contact-2{
+        padding: 0 10px;
+    }
+
+    #contact-3{
+        padding: 0 10px;
+    }
+
+    .intro-contact{
+        align-items: center;
+        height: 70px;
+        justify-content: center;
+    }
+
+    .intro-contact h3{
+        font-size: 1.3rem;
+    }
+
+    .intro-contact p{
+        font-size: 1rem;
     }
 
     .square-border{
@@ -216,27 +267,121 @@
     .square-img{
         display: none;
     }
+
+    .intro-img{
+        display: none;
+    }
 }
 
 @media (max-width: 835px){
-    .intro-container{
-        height: 50vh;
-    }
-
     .intro-content{
-        row-gap: 0px;
-        padding-top: 0px;
+        width: 80%;
+        row-gap: 150px;
     }
 
     .intro-text{
-        height: 25vh;
+        height: 35vh;
+        justify-content: center;
+    }
+
+    .intro-text h3{
+        font-size: 2rem;
+    }
+
+    .intro-text h1{
+        font-size: 4.5rem;
+    }
+
+    .intro-text button{
+        width: 40%;
     }
     
     .intro-contact-container{
-        height: 25vh;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .intro-content{
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px){
+    .intro-content{
+        width: 95%;
+    }
+
+    .intro-text h1{
+        font-size: 3.5rem;
+    }
+
+    .intro-text h3{
+        font-size: 1.5rem;
+    }
+
+    .intro-text button{
+        width: 50%;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .intro-contact h3{
+        font-size: 1rem; 
+    }
+
+    .intro-contact p{
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 435px){
+    .intro-container{
+        height: 80vh;
+    }
+
+    .intro-content{
+        row-gap: 30px;
+    }
+
+    .intro-text h1{
+        font-size: 3rem;
+    }
+
+    .intro-text button{
+        height: 50px;  
+        font-size: 1rem;
+    }
+
+    #contact-1{
+        padding: 0px;
+    }
+
+    #contact-2{
+        padding: 0px;
+    }
+
+    #contact-3{
+        padding: 0px;
+    }
+
+    .intro-contact-container{
+        height: 35vh;
+        align-items: center;
     }
 
     .intro-contact-content{
-        padding-bottom: 20px;
+        display: grid;
+        height: 100%;
+    }
+
+    .intro-contact{
+        padding: 10px 0px;
+    }
+
+    .border{
+        border-right: none;
+        border-bottom: 2px solid var(--cor04);
     }
 }
