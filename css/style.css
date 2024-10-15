@@ -8,6 +8,7 @@
 
 
 
+
 :root{
     --cor00: white;
     --cor01: #311A6E;
@@ -23,7 +24,7 @@
 
     --fonte01: 'Montserrat';
     --fonte02: 'Roboto Mono';
-    --fonte03: 'Source Code Pro'
+    --fonte03: 'Source Code Pro';
 }
 
 *{
@@ -115,7 +116,7 @@ header nav{
     font-family: var(--fonte01);
     font-size: 1.2rem;
     font-weight: 600;
-    width: 35%;
+    width: 50%;
     height: 60px;
     margin-top: 40px;
     cursor: pointer;
@@ -146,11 +147,12 @@ header nav{
     height: 30%;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
 .intro-contact-content{
-    width: 100%;
+    width: 65%;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -231,6 +233,7 @@ header nav{
     font-size: 1.3rem;
     font-family: var(--fonte01);
     text-align: justify;
+    line-height: 2rem;
 }
 
 .row-gap{
@@ -287,20 +290,18 @@ header nav{
 
 
 @media (max-width: 1440px){
-
-    .intro-text button{
-        width: 40%;
+    .intro-contact-content{
+        width: 70%;
     }
 
     .about-text button{
-        width: 35%;
+        width: 40%;
     }
 }
 
 @media (max-width: 1280px){
-    
-    .intro-text button{
-        width: 40%;
+    .intro-contact-content{
+        width: 75%;
     }
 
     .about-content{
@@ -313,6 +314,10 @@ header nav{
 }
 
 @media (max-width: 1024px){
+    .intro-contact-content{
+        width: 95%;
+    }
+
     .intro-text h1{
         font-size: 4.5rem;
     }
@@ -339,11 +344,11 @@ header nav{
         height: 80vh;
     }
 
-    .about-text h3{
+    .upper-text h3{
         font-size: 1.7rem;
     }
 
-    .about-text h1{
+    .upper-text h1{
         font-size: 2.2rem;
     }
 
@@ -386,6 +391,10 @@ header nav{
         width: 40%;
     }
 
+    .intro-contact-content{
+        width: 100%;
+    }
+
     .about-container{
         height: 120vh;
     }
@@ -400,15 +409,15 @@ header nav{
 
     .about-text{
         height: 60%;
-        width: 80%;
+        width: 90%;
     }
 
-    .about-text h3{
+    .upper-text h3{
         text-align: center;
         font-size: 2rem;
     }
 
-    .about-text h1{
+    .upper-text h1{
         text-align: center;
         font-size: 2.5rem;
     }
@@ -428,9 +437,9 @@ header nav{
     }
 
     .about-img{
-        width: 60%;
+        width: 100%;
         height: 40%;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .about-img-square{
@@ -440,80 +449,62 @@ header nav{
 }
 
 @media (max-width: 768px){
+    .intro-content{
+        width: 90%;
+    }
 
-    
+    .about-container{
+        height: 140vh;
+    }
 }
 
 @media (max-width: 600px){
-    .intro-content{
-        width: 95%;
+    header nav{
+        display: none;
+    }
+
+    .intro-text{
+        height: 40%;
     }
 
     .intro-text h1{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .intro-text h3{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .intro-text button{
         width: 50%;
-        height: 40px;
         font-size: 1.2rem;
-    }
-
-    .intro-contact h3{
-        font-size: 1rem; 
-    }
-
-    .intro-contact p{
-        font-size: 0.9rem; 
-    }
-}
-
-@media (max-width: 435px){
-    .intro-container{
-        height: 80vh;
-    }
-
-    .intro-content{
-        row-gap: 30px;
-    }
-
-    .intro-text h1{
-        font-size: 3rem;
-    }
-
-    .intro-text button{
-        height: 50px;  
-        font-size: 1rem;
-    }
-
-    #contact-1{
-        padding: 0px;
-    }
-
-    #contact-2{
-        padding: 0px;
-    }
-
-    #contact-3{
-        padding: 0px;
+        width: 275px;
     }
 
     .intro-contact-container{
-        height: 35vh;
         align-items: center;
     }
 
     .intro-contact-content{
         display: grid;
+        grid-template-columns: 1fr;
         height: 100%;
+        border: none;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
     }
 
     .intro-contact{
-        padding: 10px 0px;
+        padding: 15px 0px;
+        font-size: 1.2rem;
+        width: 275px;
+    }
+
+    .intro-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .border{
@@ -524,4 +515,114 @@ header nav{
     .mobile-border{
         border-bottom: 2px solid var(--cor04);
     }
+
+    .about-container{
+        height: 160vh;
+    }
+
+    .about-content{
+        justify-content: space-between;
+    }
+
+    .about-text{
+        width: 95%;
+    }
+
+    .row-gap{
+        margin-bottom: 35px;
+    }
+
+    .about-img{
+        height: 35%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .about-img-square{
+        height: 90%;
+        
+    }
+
+    .about-infos-content{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 435px){
+    .intro-container{
+        height: 100vh;
+    }
+
+    .intro-text{
+        text-align: center;
+    }
+
+    .intro-text h1{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .intro-text h3{
+        font-size: 1.7rem;
+    }
+
+    .intro-text button{
+        height: 50px;
+        width: 200px;
+    }
+
+    .intro-contact{
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .about-container{
+        height: 200vh;
+    }
+
+    .about-text{
+        height: 65%;
+    }
+
+    .upper-text h3{
+        font-size: 1.7rem;
+    }
+
+    .upper-text h1{
+        font-size: 2rem;
+    }
+
+    .upper-text p{
+        font-size: 1.2rem;
+    }
+
+    .about-text button{
+        width: 200px;
+        height: 50px;
+    }
+
+    .about-infos-container{
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+
+    .about-infos-content{
+        display: grid;
+        text-align: center;
+    }
+
+    .about-img{
+        height: 30%;
+    }
+}
+
+@media (max-width: 400px){
+    .about-text{
+        height: 70%;
+    }
+
+    .about-img{
+        height: 25%;
+    }
+
 }
