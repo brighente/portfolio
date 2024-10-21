@@ -21,6 +21,7 @@
     --cor08: black;
     --corbg: #1b0f1f;
     --corbg2: #0b060c;
+    --corbg3: #130b16;
 
     --fonte01: 'Montserrat';
     --fonte02: 'Roboto Mono';
@@ -32,6 +33,7 @@
     padding: 0px;
     list-style: none;
     border: 0px;
+    box-sizing: border-box;
 }
 
 header{
@@ -153,7 +155,7 @@ header nav{
 
 .intro-contact-content{
     width: 65%;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +175,7 @@ header nav{
 }
 .intro-contact{
     padding: 0px 10px;
-    width: 200px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,6 +227,7 @@ header nav{
     font-size: 2.2rem;
     color: var(--cor03);
     font-family: var(--fonte01);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.541);
 }
 
 .upper-text h1{
@@ -288,6 +291,74 @@ header nav{
 .about-text button:hover{
     background-color: transparent;
 }
+
+.habilities-container{
+    width: 100%;
+    height: 400px;
+    padding: 0 150px;
+    background-color: var(--corbg);
+}
+
+.habilities-title{
+    color: var(--cor03);
+    font-family: var(--fonte01);
+    text-align: center;
+    padding-bottom: 35px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.541);
+    font-size: 3rem;
+
+}
+
+.habilities-content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    column-gap: 15px;
+    
+}
+
+.square-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor07);
+    background-color: var(--corbg3);
+    padding: 0 60px;
+    row-gap: 20px;
+}
+
+.square-content h3{
+    color: var(--cor00);
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.square-content p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--fonte01);
+
+}
+
+.habilities-icon{
+    color: var(--cor00);
+    font-size: 3rem;
+    display: flex;
+    column-gap: 20px;
+}
+
+.habilities-divider{
+    width: 100%;
+    border: 1px solid var(--cor01);
+}
+
+
+
+
 
 
 
@@ -578,11 +649,11 @@ header nav{
     }
 
     .about-container{
-        height: 200vh;
+        height: 220vh;
     }
 
     .about-text{
-        height: 65%;
+        height: 70%;
     }
 
     .upper-text h3{
@@ -603,8 +674,8 @@ header nav{
     }
 
     .about-infos-container{
-        row-gap: 25px;
-        column-gap: 25px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
     }
 
     .about-infos-content{
